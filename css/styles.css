@@ -268,7 +268,7 @@ p {
   align-items: center;
   justify-content: center;
   position: relative;
-  top: -20px;
+  top: -35px;
 }
 
 .hero-text {
@@ -292,12 +292,12 @@ p {
 .hero-text-wedding p,
 .hero-text-date p {
   font-family: "Raleway", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .hero-text-wedding {
   margin-bottom: 45px;
-  font-size: 18px;
 }
 
 .hero-text-date {
@@ -464,6 +464,15 @@ p {
 
   .hero-text p {
     margin: 14px;
+  }
+
+  .hero-text-wedding p,
+  .hero-text-date p {
+    font-weight: 300;
+  }
+
+  .hero-text-date p {
+    font-size: 16px;
   }
 
   .olli {
