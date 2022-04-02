@@ -37,6 +37,8 @@ h2 {
 p {
   margin: 0;
   font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.3;
 }
 
 .text-block {
@@ -86,7 +88,7 @@ p {
 
 #menuToggle a {
   text-decoration: none;
-  color: #232323;
+  color: #ffffff;
   transition: color 0.3s ease;
 }
 
@@ -109,7 +111,7 @@ p {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: #2d4540;
+  background: #ffffff;
   border-radius: 3px;
   z-index: 1;
   transform-origin: 4px -1px;
@@ -128,7 +130,7 @@ p {
 #menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: #ffffff;
 }
 
 #menuToggle input:checked ~ span:nth-last-child(3) {
@@ -146,21 +148,19 @@ p {
   margin: -100px 0 0 -25px;
   padding: 48px 0;
   padding-top: 90px;
-  background: #fbe5ff;
+  background: #122b21;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 #menu li {
-  padding: 10px 15px;
+  padding: 12px 15px;
   font-size: 22px;
   text-align: center;
 }
@@ -183,10 +183,10 @@ p {
 .header-logo {
   font-family: "Great Vibes", cursive;
   color: white;
-  font-size: 42px;
+  font-size: 38px;
   position: absolute;
-  left: 100px;
-  top: 18px;
+  left: 50px;
+  top: 20px;
   display: flex;
   align-items: center;
 }
@@ -203,11 +203,11 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 75%;
 }
 
 .links a {
-  margin: 0 3rem;
-  /* color: black; */
+  margin: 0 2.5rem;
   color: white;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
@@ -225,8 +225,6 @@ p {
   height: 1px;
   bottom: 0;
   left: 0;
-  /* background-color: #014f41; */
-  /* background-color: black; */
   background-color: white;
   transform: scaleX(0);
   transform-origin: top left;
@@ -250,34 +248,25 @@ p {
 }
 
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   background: url("../assets/img/startsida_eng_jumbotron.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Great Vibes", cursive;
 }
 
-/* .hero-text {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: -1;
-} */
-
 .hero-text {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 120px;
+  font-size: 95px;
 }
 
 .hero-text p {
-  margin: 14px;
+  margin: 1px;
+  font-family: "Great Vibes", cursive;
 }
 
 .hero-text p:nth-child(2) {
@@ -301,15 +290,11 @@ p {
 
 .olli {
   position: absolute;
-  height: 200px;
+  height: 175px;
   left: 0;
-  bottom: -32px;
+  bottom: -72px;
+  z-index: 1;
 }
-
-/* .hero-background {
-  background-color: white;
-  height: 24px;
-} */
 
 /* ------------ Where and When ------------- */
 
@@ -328,7 +313,6 @@ p {
 .where-and-when-container {
   display: flex;
   flex-direction: column;
-  /* width: 80%; */
   margin-top: 30px;
 }
 
@@ -408,16 +392,14 @@ p {
 
 /* ------------ Footer ------------- */
 
-.footer {
+/* .footer {
   min-height: 200px;
-  /* background-color: white; */
   background-color: #f3e9f9;
-  /* background-color: #014f41; */
 }
 
 .footer .flowers-right-corner {
   height: 400px;
-}
+} */
 
 @media (min-width: 1024px) {
 }
@@ -436,7 +418,9 @@ p {
   /* ------------ Header ------------- */
 
   .header {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: fixed;
     width: 100%;
     padding: 30px 0;
@@ -462,13 +446,19 @@ p {
 
   /* ------------ Hero ------------- */
 
-  /* .hero {
-    height: 100vh;
-    background: url("../assets/img/startsida_eng_jumbotron.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: "Great Vibes", cursive;
-  } */
+  .hero-text {
+    flex-direction: row;
+    font-size: 120px;
+  }
+
+  .hero-text p {
+    margin: 14px;
+  }
+
+  .olli {
+    height: 200px;
+    bottom: -32px;
+  }
 
   /* ------------ Where and When ------------- */
 
@@ -517,4 +507,7 @@ p {
 }
 
 @media (min-width: 1920px) {
+  .links a {
+    margin: 0 3rem;
+  }
 }
