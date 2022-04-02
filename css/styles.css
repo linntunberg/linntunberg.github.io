@@ -1,18 +1,9 @@
 /* -------- Base styles --------- */
 
 body {
-  /* background-color: lavender; */
-  /* background-color: #faf9fd; */
-  /* background-color: #fcf9ff; */
-  /* background-color: #fefdff; */
-  /* background-color: #faf9fb; */
-  /* background-color: #fdfaff; */
   margin: 0;
   font-family: "Raleway", sans-serif;
   font-weight: 500;
-  /* background: url("../assets/img/startsida_eng_jumbotron.jpg");
-  background-repeat: no-repeat;
-  background-size: contain; */
 }
 
 html {
@@ -27,6 +18,7 @@ h5,
 h6 {
   font-weight: bold;
   margin: 0;
+  font-family: "Great Vibes", cursive;
 }
 
 h2 {
@@ -48,14 +40,11 @@ p {
   align-items: center;
   position: relative;
   overflow-x: clip;
-  /* min-height: 22rem; */
   text-align: center;
 }
 
 .text-block-content {
   padding: 50px;
-  /* width: 55%; */
-  /* z-index: -1; */
 }
 
 .column-50 {
@@ -100,8 +89,8 @@ p {
   top: -7px;
   left: -5px;
   cursor: pointer;
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
+  opacity: 0;
+  z-index: 2;
   -webkit-touch-callout: none;
 }
 
@@ -191,11 +180,12 @@ p {
   align-items: center;
 }
 
-.header-logo p {
+.header-logo h3 {
   margin: 0px 2px;
+  font-weight: normal;
 }
 
-.header-logo p:nth-child(2) {
+.header-logo h3:nth-child(2) {
   font-size: 15px;
 }
 
@@ -390,16 +380,11 @@ p {
   transform: rotate(128deg) scale(-1);
 }
 
-/* ------------ Footer ------------- */
+/* ------------ Clothing ------------- */
 
-/* .footer {
-  min-height: 200px;
-  background-color: #f3e9f9;
+.clothing img {
+  margin-top: 20px;
 }
-
-.footer .flowers-right-corner {
-  height: 400px;
-} */
 
 @media (min-width: 1024px) {
 }
@@ -433,11 +418,8 @@ p {
     height: 84px;
     width: 100%;
     z-index: 9;
-    /* background-color: white; */
     background-color: black;
     opacity: 25%;
-    /* background-color: #f3e9f9; */
-    /* background-color: #e9e0ee; */
   }
 
   nav {
