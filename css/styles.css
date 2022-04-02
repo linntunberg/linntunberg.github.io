@@ -64,7 +64,8 @@ p {
 }
 
 .text-block-content {
-  padding: 50px;
+  padding: 45px 50px;
+  z-index: 1;
 }
 
 .column-50 {
@@ -83,6 +84,14 @@ p {
   display: none !important;
 }
 
+.darkgreen-background {
+  position: absolute;
+  height: 100%;
+  width: 85%;
+  opacity: 75%;
+  background-color: #02211b;
+}
+
 /* ------------ Hamburger menu - mobile ------------- */
 
 #menuToggle {
@@ -90,7 +99,7 @@ p {
   position: absolute;
   top: 25px;
   left: 25px;
-  z-index: 1;
+  z-index: 5;
   -webkit-user-select: none;
   user-select: none;
 }
@@ -411,6 +420,12 @@ p {
   margin-top: 20px;
 }
 
+/* ------------ Accomodation ------------- */
+
+.accomodation-text {
+  z-index: 1;
+}
+
 @media (min-width: 1024px) {
 }
 
@@ -425,6 +440,9 @@ p {
     width: 50%;
   }
 
+  .darkgreen-background {
+    display: none;
+  }
   /* ------------ Header ------------- */
 
   .header {
