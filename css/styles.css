@@ -12,6 +12,12 @@ html {
   height: 100%;
 }
 
+.container {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
 /* html,
 body {
   height: 100%;
@@ -246,18 +252,18 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   color: white;
   overflow-y: clip;
-}
-
-.hero {
-  /* min-height: 100vh; */
   background: url("../assets/img/startsida_eng_jumbotron.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100%;
   font-family: "Great Vibes", cursive;
+  /* min-height: 100vh; */
+}
+
+.hero-text-container {
+  margin-top: 110px;
 }
 
 .hero-text {
@@ -442,6 +448,14 @@ p {
   }
 
   /* ------------ Hero ------------- */
+
+  .hero {
+    justify-content: center;
+  }
+
+  .hero-text-container {
+    margin-top: 0px;
+  }
 
   .hero-text {
     flex-direction: row;
