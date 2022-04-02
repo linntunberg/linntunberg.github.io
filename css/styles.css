@@ -260,16 +260,7 @@ p {
   min-height: 100%;
   font-family: "Great Vibes", cursive;
   justify-content: center;
-  /* min-height: 100vh; */
 }
-
-/* .hero-text-container {
-  margin-top: 110px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-} */
 
 .hero-text {
   display: flex;
@@ -361,7 +352,6 @@ p {
   position: relative;
   text-align: right;
   height: 18rem;
-  margin-top: 55px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -419,7 +409,7 @@ p {
   /* ------------ Base styles ------------- */
 
   .text-block-content {
-    width: 60%;
+    width: 50%;
   }
 
   .column-50 {
@@ -453,14 +443,6 @@ p {
   }
 
   /* ------------ Hero ------------- */
-
-  .hero {
-    justify-content: center;
-  }
-
-  /* .hero-text-container {
-    margin-top: 0px;
-  } */
 
   .hero-text {
     flex-direction: row;
