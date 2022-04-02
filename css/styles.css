@@ -259,16 +259,17 @@ p {
   background-size: cover;
   min-height: 100%;
   font-family: "Great Vibes", cursive;
+  justify-content: center;
   /* min-height: 100vh; */
 }
 
-.hero-text-container {
+/* .hero-text-container {
   margin-top: 110px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
+} */
 
 .hero-text {
   display: flex;
@@ -457,9 +458,9 @@ p {
     justify-content: center;
   }
 
-  .hero-text-container {
+  /* .hero-text-container {
     margin-top: 0px;
-  }
+  } */
 
   .hero-text {
     flex-direction: row;
